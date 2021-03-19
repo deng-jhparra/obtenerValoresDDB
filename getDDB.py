@@ -6,7 +6,7 @@ def query_scan (dynamodb=None):
     if not dynamodb:
         dynamodb = boto3.resource('dynamodb')
 
-    table = dynamodb.Table('prod.RetailTraders')
+    table = dynamodb.Table('')
 
     done = False
     start_key = None
