@@ -4,9 +4,9 @@ from boto3.dynamodb.conditions import Key
 
 def query_scan (dynamodb=None):
     if not dynamodb:
-        dynamodb = boto3.resource('dynamodb')
+        dynamodb = boto3.resource('dynamodb', credenciales)
 
-    table = dynamodb.Table('')
+    table = dynamodb.Table('nombre de la tabla')
 
     done = False
     start_key = None
